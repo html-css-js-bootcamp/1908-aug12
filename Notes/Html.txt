@@ -1,0 +1,34 @@
+Technologies used for web development: 
+1. Client-side/Front End :
+    - these are used to create applications which runs on client
+    - Client refers to user's device (laptop, desktop, tablet'e browser). Eg: chrome, opera, safari, firefox.
+    - Technologies include: HTML, CSS, JS, Angular,TypeScript, VBScript, React, Vue etc....
+
+2. Server-side
+    - these are used to create applications which runs on server
+    - Server referes to another computer on web(because it has public/private/or both access to it).
+    - It has a special id to access id like IP address (192.302.255.98)
+    - It's difficult for user to remember the complex IPs so we have alias to it called DNS(Domain Name Server).
+    - Eg: www.google.com [172.217.167.4]
+    - Technologies : C#, .Net, Java, Php, Sharepoint etc....
+
+3. Database-side
+    - these are used to create applications which runs on Database Server.
+    - Database refers to storage management system which is  software which maintains tables (rows, columns, fields) in logicala and mathematical way.
+    - Eg: SQL Sever (Microsoft), OracleDb, mysql, postrgres, Cloud (Azure, Amazon, Google, Oracle, IBM)
+
+# What is HTML?
+- It is called Hypertext MarkUp Language.
+- the code gives you the visuals that is why we call it as MarkUp language.
+- there are few more MarkUp language. Eg: XML, XAML, SAML etc....
+- This is used to create web pages, typically static web pages (where the content remains same) 
+    or dynamic web pages(where contents changes over a period of time) with server side technologies.
+- Its extension is .html
+
+# Elements in HTML
+<tagname>content</tagname>  -> this forms an html Element
+There are 2 types of elements in HTML:
+    - Inline : These elements takes width as required by the content and the next inline element will start after the left-over space
+    Eg:<em>, <strong>,<u>,<mark>,<span>,<img>,<a>
+    - Block: These elements takes the entire width of the page and next block element will start from a new line.
+    Eg: <h1>....<h6>,<p>,<div>,<ol>,<ul>,<li> etc......

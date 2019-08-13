@@ -42,3 +42,15 @@ There are 2 types of elements in HTML:
 - There are 2 kind of attributes:
     - Global Attribute: these are applied to any html element. Eg: id, name, class, width, height, style etc... 
     - Local Attribute: these are specific to the element. Eg : src, charset, lang, href, type etc....
+
+# Paths: some elements need path to point to the respective resource.
+Paths in technology could be:
+    1. Absolute: fully qualified path, generally used when we have point it to out side server.
+        This also include protocol if outside the server.
+    2. Relative: if the resource which element is pointing to is in the same file system where the application 
+        files are there. Prefer to use relative path over there.
+
+# Why Forms?
+- we use to take input from users and send it over.
+- html form is created using <form> </form>
+- <input> used to take values from users

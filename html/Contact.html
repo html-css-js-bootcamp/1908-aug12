@@ -5,9 +5,79 @@
         <title>Contact Us</title>
     </head>
     <body>
-        <a href="C:\Revature\RBC\1908-aug12\html\Home.html">Home</a>
-        <a href="C:\Revature\RBC\1908-aug12\html\About.html">About</a>
-        <a href="C:\Revature\RBC\1908-aug12\html\Contact.html">Contact</a>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
         <h1>Contact Us</h1>
+        <address>
+            <p>11730, Plaza America Dr</p>
+            <p>#205 Reston, VA</p>
+            <p>20190</p>
+        </address>
+        <br>
+        <br>
+        <h3>For more queries write us at:</h3> <a href="mailto:support@revature.com">support@revature.com</a>
+        <h3>Or submit your query in the form below</h3>
+        <br>
+        <form action="Home.html" method="GET">
+            <table>
+                <tr>
+                    <td>
+                            <label for="name">Name </label><span>* </span>
+                    </td>
+                    <td>
+                            <input type="text" id="name" placeholder="enter your full name" required>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                            <label for="email">Email</label><span>* </span>
+                    </td>
+                    <td>
+                            <input type="text" id="email" placeholder="enter your Email" required>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <label for="phone">Phone</label><span>* </span>
+                    </td>
+                    <td>
+                            <input type="text" id="phone" placeholder="enter your Phone number" required>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                            <label for="gender">Gender</label><span>* </span>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender">male
+                        <input type="radio" id="female" name="gender">female
+                        <input type="radio" id="others" name="gender">others
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                            <label for="query">Your Query</label><span>* </span>
+                    </td>
+                    <td>
+                        <textarea required placeholder="Enter your query and we will get back to you soon" rows="5" cols="25"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+            
+           
+        </form>
     </body>
 </html>

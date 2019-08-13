@@ -1,20 +1,23 @@
 Technologies used for web development: 
 1. Client-side/Front End :
     - these are used to create applications which runs on client
-    - Client refers to user's device (laptop, desktop, tablet'e browser). Eg: chrome, opera, safari, firefox.
+    - Client refers to user's device (laptop, desktop, tablet'e browser). 
+        Eg: chrome, opera, safari, firefox.
     - Technologies include: HTML, CSS, JS, Angular,TypeScript, VBScript, React, Vue etc....
 
-2. Server-side
+2. Server-side 
     - these are used to create applications which runs on server
     - Server referes to another computer on web(because it has public/private/or both access to it).
     - It has a special id to access id like IP address (192.302.255.98)
-    - It's difficult for user to remember the complex IPs so we have alias to it called DNS(Domain Name Server).
+    - It's difficult for user to remember the complex IPs so we have alias to it called DNS (Domain Name Server).
     - Eg: www.google.com [172.217.167.4]
     - Technologies : C#, .Net, Java, Php, Sharepoint etc....
+    - Server example - IIS Server (Microsoft), Tomcat, Apache, Nginx etc....
 
 3. Database-side
     - these are used to create applications which runs on Database Server.
-    - Database refers to storage management system which is  software which maintains tables (rows, columns, fields) in logicala and mathematical way.
+    - Database refers to storage management system which is a software which maintains tables 
+        (rows, columns, fields) in logical and mathematical way.
     - Eg: SQL Sever (Microsoft), OracleDb, mysql, postrgres, Cloud (Azure, Amazon, Google, Oracle, IBM)
 
 # What is HTML?
@@ -32,3 +35,10 @@ There are 2 types of elements in HTML:
     Eg:<em>, <strong>,<u>,<mark>,<span>,<img>,<a>
     - Block: These elements takes the entire width of the page and next block element will start from a new line.
     Eg: <h1>....<h6>,<p>,<div>,<ol>,<ul>,<li> etc......
+
+# Attributes in HTML
+- anything written right after opening/start tag name is the attribute.
+- they define behaviour of the html elements.
+- There are 2 kind of attributes:
+    - Global Attribute: these are applied to any html element. Eg: id, name, class, width, height, style etc... 
+    - Local Attribute: these are specific to the element. Eg : src, charset, lang, href, type etc....

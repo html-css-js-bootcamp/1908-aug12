@@ -23,4 +23,4 @@ CSS can be applied in 3 ways:
               we link this to all the pages where we want to apply styles using <link> tag.
 Note:
 - It is recommended to use External Css over any other style sheet.
-- preference is given to inline style sheet at any point of time
+- Precedence is for inline style sheet over external or internal Css.

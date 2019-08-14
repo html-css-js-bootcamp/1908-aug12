@@ -3,3 +3,13 @@
     font-style: oblique;
     font-family: 'Courier New', Courier, monospace;
 }
+#address{
+    background: white;
+    width: 200px;
+}
+
+.text{
+    color:blue;
+    font-style:normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

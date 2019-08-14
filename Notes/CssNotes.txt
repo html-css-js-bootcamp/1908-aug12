@@ -32,5 +32,16 @@ CSS Selectors: They are used to tell where should the CSS to be applied.
         }
 - id selector: which is applied to an element with that id.
             #id{
-                
+
             }
+- class selector: class is a global attribute which is used to categorize or group html elements of related type
+    we can use class selector to apply CSS to that particular class.
+    .class"{
+        css declaration
+    }
+    Eg: .text{
+        color: red;
+    }
+- Pseudo-class selector: these are behavioral properties of html element. mouse hover, onfocus,focusout
+    Note:
+    - among class element and id, id selector gets highest precedence 

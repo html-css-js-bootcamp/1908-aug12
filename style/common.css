@@ -9,3 +9,7 @@ th{
     color: purple;
     border: 1px,solid,black;
 }
+a:hover{
+    font-size: 30px;
+    color:blueviolet;
+}

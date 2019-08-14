@@ -11,7 +11,7 @@
             <a href="About.html">About</a>
             <a style = "background: lightblue" href="Contact.html">Contact</a>
         <h1>Contact Us</h1>
-        <address>
+        <address id="address">
             <p>11730, Plaza America Dr</p>
             <p>#205 Reston, VA</p>
             <p>20190</p>
@@ -37,7 +37,7 @@
                             <label for="name">Name </label><span>* </span>
                     </td>
                     <td>
-                            <input type="text" id="name" placeholder="enter your full name" required>
+                            <input type="text" class="text" id="name" placeholder="enter your full name" required>
                     </td>
                 </tr>
                 <tr>
@@ -46,7 +46,7 @@
                             <label for="email">Email</label><span>* </span>
                     </td>
                     <td>
-                            <input type="text" id="email" placeholder="enter your Email" required>
+                            <input type="text" class="text"  id="email" placeholder="enter your Email" required>
                     </td>
                 </tr>
                 <tr>
@@ -55,13 +55,13 @@
                         <label for="phone">Phone</label><span>* </span>
                     </td>
                     <td>
-                            <input type="text" id="phone" placeholder="enter your Phone number" required>
+                            <input type="text" class="text" id="phone" placeholder="enter your Phone number" required>
                     </td>
                 </tr>
                 <tr>
 
                     <td>
-                            <label for="gender">Gender</label><span>* </span>
+                            <label id="male" for="gender">Gender</label><span>* </span>
                     </td>
                     <td>
                         <input type="radio" id="male" name="gender">male
@@ -75,7 +75,7 @@
                             <label for="query">Your Query</label><span>* </span>
                     </td>
                     <td>
-                        <textarea required placeholder="Enter your query and we will get back to you soon" rows="5" cols="25"></textarea>
+                        <textarea class="text" required placeholder="Enter your query and we will get back to you soon" rows="5" cols="25"></textarea>
                     </td>
                 </tr>
                 <tr>

@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact Us</title>
+        <link href="../style/common.css" rel="stylesheet">
     </head>
     <body>
             <a href="Home.html">Home</a>
             <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
+            <a style = "background: lightblue" href="Contact.html">Contact</a>
         <h1>Contact Us</h1>
         <address>
             <p>11730, Plaza America Dr</p>
@@ -19,6 +20,15 @@
         <h3>For more queries write us at:</h3> <a href="mailto:support@revature.com">support@revature.com</a>
         <h3>Or submit your query in the form below</h3>
         <br>
+        <!-- 
+         Forms are used to obtain values from the users
+         action attribute tells where the values should be submitted (like url of the backend server or page)
+         method attribute tells how the values are submitted:
+            Request Header : GET
+            Request Body : POST
+        Forms uses input types to capture values from the user:
+            input type=> text, radio, submit (button which sends value to action attribute url), checkbox, email, phone, date etc.....
+         -->
         <form action="Home.html" method="GET">
             <table>
                 <tr>

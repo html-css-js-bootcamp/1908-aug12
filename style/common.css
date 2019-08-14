@@ -4,3 +4,8 @@ a{
 body{
     background: lightgray;
 }
+th{
+    background: lightgoldenrodyellow;
+    color: purple;
+    border: 1px,solid,black;
+}

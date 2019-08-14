@@ -1,0 +1,12 @@
+th{
+    background: #99e699;
+    color: blueviolet;
+}
+td{
+    background: lemonchiffon;
+}
+table, th, td{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}

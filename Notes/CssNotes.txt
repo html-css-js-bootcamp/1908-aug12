@@ -24,3 +24,13 @@ CSS can be applied in 3 ways:
 Note:
 - It is recommended to use External Css over any other style sheet.
 - Precedence is for inline style sheet over external or internal Css.
+
+CSS Selectors: They are used to tell where should the CSS to be applied.
+- Element Selectors: applies to html Element directly.
+        element{
+            css declaration
+        }
+- id selector: which is applied to an element with that id.
+            #id{
+                
+            }

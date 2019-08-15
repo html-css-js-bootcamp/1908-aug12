@@ -5,6 +5,7 @@
         <title>Contact Us</title>
         <link href="../style/common.css" rel="stylesheet">
         <link href="../style/contact.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
             <a href="Home.html">Home</a>
@@ -32,14 +33,13 @@
          -->
         <form action="Home.html" method="GET">
             <table>
-                <tr>
-                    <td>
-                            <label for="name">Name </label><span>* </span>
-                    </td>
-                    <td>
-                            <input type="text" class="text" id="name" placeholder="enter your full name" required>
-                    </td>
-                </tr>
+                
+                <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="name" class="col-form-label">Name </label><span>* </span>
+                </div>
+                    <input type="text" class="text col-sm-4 form-control" id="name" placeholder="enter your full name" required>
+                </div>
                 <tr>
 
                     <td>
@@ -80,10 +80,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="Submit">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Submit">
                     </td>
                     <td>
-                        <input type="reset" value="Reset">
+                        <input type="reset" class="btn btn-primary btn-sm" value="Reset">
                     </td>
                 </tr>
             </table>

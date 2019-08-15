@@ -2,22 +2,22 @@ CSS: Cascading Style Sheet. It is used to add styles to the webpage to make it m
 
 CSS Rule/Ruleset
 
-selector(means where to apply the CSS){
-    property1 : "value1";
-    property2 : "value2";
-    property3 : "value3";
-    .               .
-    .               .
-    .               .
-    .               .
-    propertyN : "valueN";
-}
+    selector(means where to apply the CSS){
+        property1 : value1;
+        property2 : value2;
+        property3 : value3;
+        .              .
+        .              .
+        .              .
+        .              .
+       propertyN : valueN;
+    }
 
 Eg: p{
         background: blue;
     }
 CSS can be applied in 3 ways:
-1. Inline - using style attribute (global attribute). Not recommended way to use most of the time.
+1. Inline - using "style" attribute (global attribute). Not recommended way to use most of the time.
 2. Internal - used on that same page. We put styles in the <style></style>
 3. External - This is used as an efficient way of applying stylesheet. We create a stylesheet with .css suffix/extension
               we link this to all the pages where we want to apply styles using <link> tag.

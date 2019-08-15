@@ -1,0 +1,68 @@
+● Introduction to JavaScript
+JavaScript?
+- It is not Java(its a different programming language which comes under server-side tech)
+- It is a Programming language, which is majorly used for front-end technologies.
+- It was earlier know as LiveScript. But when Java became super popular they renamed it to JavaScript.
+- Further JavaScript became popular and standardised by ECMA(association which maintains standardization of programming languages)
+- Since the JS is also known as ECMAScript.
+- ES5 - ECMAScript2012, ES6- ECMAScript2015, ES7 ECMAScript 2016.... ES10 ECMAScript 2019
+
+Why JavaScript?
+- HTML is used for creating a webpage, CSS adds appealing look and feel to web page but JavaScript
+    is used to add behaviour to a web page.
+
+What JavaScript can do?
+- JS can create prompts.
+- JS can make HTML elements respond to some action
+- JS can add HTML elements on fly
+- JS can remove HTML elements on fly
+- JS can make a call to server or interact with server using XMLHTTPRequest
+- JS can enable using 3rd party Apis. Eg: incorporate google maps.
+- JS can store values at client side.
+- There is a lot that JS can do.
+
+Features/characterstics of JavaScript:
+- It is interpretted not compiled.
+- It is loosely-typed
+- It is case-sensitive. Man and man are treated differently.
+
+Where JavaScript code is executed?
+- JS code is first interpreted by the browser Engine then run by it.
+- Every browser have their own engines. Eg: Chrome(V8), IE(Chakra),Firefox(Spider Monkey).
+
+● Variables and Datatypes
+Variables: they are used to store a value. They values are stored in memory of a browser
+    name="Pushpinder Kaur";
+    age=27;
+    isLive=true;
+- we can also create variable by using var or let keyword
+    var name;//declaration of the variable
+    name="Pushpinder" // allocation/assignation of a value
+
+● Operators and Truth Tables
+- (binary- applied on 2 or more)
+    - Arithmatic- +,-,/,*,% (modulus- gives you the remainder on division)
+    - Logical- &&,||,!
+      lets say we have 2 variables a and b with some boolean value
+        AND - &&
+        OR -||
+        NOT - !
+    - Assignment- =, +=, -+,*=,/=
+        
+    - Comparison- >,<,>=,<=,==,===
+- (unary operators- applies to single variable)
+    - increment ++
+        - post-increment - a++
+        - pre-increment - ++a
+    - decrement --
+        - post-decrement - a--
+        - pre-decrement - --a
+    - not ! - negation
+        !a
+- Logical Operators
+● Conditionals
+● Functions and Objects
+● Debugger Breakpoints in Devtools  
+● Scopes 
+● Arrays
+● Loops: for, while, do-while

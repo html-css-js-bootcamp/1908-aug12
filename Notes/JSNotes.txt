@@ -75,8 +75,21 @@ Variables: they are used to store a value. They values are stored in memory of a
     - if-else
     - else-if
     - switch
-● Functions and Objects
+● Loops: for, while, do-while :
+    - Repetiton/iteration
+● Functions : Operations which are performed can be encapsulated in a function. You can also say that it encloses 
+              logic of the program.
+    - You can reuse them as many times as you want.
+    - There are different types of functions in JS:
+        - Named functions
+        - Anonymous functions
+        - Arrow functions (new in ES6)
+        - functions with parameters
+        - function which returns values
+        - callback functions
+        - IIFE(Immediate Invoked Function Expressions) functions
+
 ● Debugger Breakpoints in Devtools  
 ● Scopes 
 ● Arrays
-● Loops: for, while, do-while
+● Objects

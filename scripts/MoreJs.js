@@ -56,7 +56,6 @@ console.log(`${num} is odd`);// one line statements after if and else donot requ
  * 
  * }
  */
-
 /*let num=Number(prompt('Enter number for odd or even'));
 switch(num%2)
 {
@@ -67,8 +66,7 @@ switch(num%2)
             console.log(`${num} is odd`);
             break;
 }*/
-
-let car= prompt('Enter your car for rental');
+/*let car= prompt('Enter your car for rental');
 switch(car.toLowerCase()){
     case 'mazda' :
         console.log('You entered mazda and we have it');
@@ -82,4 +80,89 @@ switch(car.toLowerCase()){
     default :
             console.log(`You entered ${car} but we don't have it, sorry about it`);
             break;
+}*/
+
+// LOOPS:
+
+/*let x=0;// initialization
+// while(x>0 && x<=10)// first condition check
+// {
+//     console.log(x);
+//     x++;// x=x+1
+// }
+do{
+    console.log(x);
+    x++;// x=x+1
 }
+while(x>0 && x<=10)// condition check after do block has executed
+*/
+
+// print numbers in reverse order
+
+// let y=10
+// while(y>0){
+//     console.log(y);
+//     y--;
+// }
+// while (true){
+//     // this is infinite loop which never stops
+//     // bad practise
+// }
+
+//print even numbers from 1 to 10
+
+/*let a=1;
+while(a>0 && a<11){
+    if(a%2==0)
+        console.log(a);
+    a++;
+}*/
+
+// FUNCTIONS: behavior of the program
+// CONVENTION: verb, camelCase or ProperCase
+// Named Function
+/*function sayHello()// declaration
+{
+    //body or definition of the function
+    console.log('Hello');
+}
+
+// call/invoke function
+sayHello();
+sayHello();//once function is created can be called any number of times
+sayHello();
+sayHello();
+*/
+
+// function inside a variable
+/*var wishHello=function sayHello()
+{
+    console.log('Hello');
+}
+console.log(wishHello);// this prints function definition because variable wishHello holds the reference of sayHello function
+wishHello();*/
+
+// anonymous function - a function with no name and only for single use
+/*var anonymousFunctionRef=function(){
+    console.log('Hello anonymous');
+}
+anonymousFunctionRef();*/
+
+// SHORTHAND OF ANONYMOUS FUNCTIONS-> ARROW FUNCTIONS:
+// var arrowFuncRef= ()=> console.log('Hello Arrow functions');
+// arrowFuncRef();
+
+// FUNCTION with parameters
+/*function add()
+{
+    let a= Number(prompt('Enter number 1'));
+    let b= Number(prompt('Enter number 2'));
+    console.log(a+b);
+}
+add();*/
+function add(a,b){
+    console.log(a+b);
+}
+let a= Number(prompt('Enter number 1'));
+let b= Number(prompt('Enter number 2'));
+add(a,b);

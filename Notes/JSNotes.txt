@@ -48,7 +48,7 @@ Variables: they are used to store a value. They values are stored in memory of a
         OR -||
         NOT - !
     - Assignment- =, +=, -+,*=,/=
-        
+
     - Comparison- >,<,>=,<=,==,===
 - (unary operators- applies to single variable)
     - increment ++
@@ -60,6 +60,13 @@ Variables: they are used to store a value. They values are stored in memory of a
     - not ! - negation
         !a
 - Logical Operators
+
+- Strings: Its an array (collection) of character. We can use " " or ' ' to represent string value.
+    In JS there are some in built operations that we can do with strings.
+    toUpperCase() - converts string's current case to UPPERCASE.
+    toLowerCase() - cunverts string's current case to lowercase.
+    charAt() - Returns characters at the specified position.
+    some more - splice(), join(), trim() etc.....
 ● Conditionals
 ● Functions and Objects
 ● Debugger Breakpoints in Devtools  

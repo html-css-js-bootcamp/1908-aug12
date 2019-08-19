@@ -2,15 +2,15 @@
 //name="Pushpinder Kaur"; //a way to create a global variable (that can be accessed anywhere in the program)
 //var name="Pushpinder Kaur";
 //let name="Pushpinder Kaur"
-var name;//declaration
+//var name;//declaration
 
-name="Chris Hendry";// allocation/assignation of thr value to the variable
+//name="Chris Hendry";// allocation/assignation of thr value to the variable
 //alert(name);
-var age=25;
+//var age=25;
 //console.log('Hello World');
-console.log(`Hello I am ${name}. I am ${age} years old.`);
+//console.log(`Hello I am ${name}. I am ${age} years old.`);
 
-var isATrainee=true;
+//var isATrainee=true;
 //Datatype in JS:
 /*
 Datatypes means what kind of data can be stored. In JS there are different datatypes:
@@ -34,7 +34,33 @@ console.log(`Type of 'A'/0 = ${'A'/0} is a ${typeof ('A'/0)}`);*/
 /*
 (binary- applied on 2 or more)
 Arithmatic- +,-,/,*,% (modulus- gives you the remainder on division)
-Logical- &&,||,!
+Logical Operator-
+AND-&& : This is true only when both operands are true in condition else false for rest of it.
+        Eg: T&&T= T
+            T&&F= F
+            F&&T= F
+            F&&F= F
+
+OR-||: This is false only if both the operands are false else it is true,
+    Eg: Eg: T||T= T
+            T||F= T
+            F||T= T
+            F||F= F
+NOT-! : This is negation of existing value, !true becomes false and !false becomes true.
+    Eg: !T= F
+        !F= T
+XOR-^ : This is false if both operands are same.
+        Eg: T^T=F
+            T^F=T
+            F^T=T
+            F^F=F
+
+Eg: 10>13 != 15<17
+      F    !=    T => T    
+    !!!!false = (10*3)>(10+20)
+    F = 30>30
+    F = F
+    T
 Assignment- =, +=, -+,*=,/=
 Comparison- >,<,>=,<=,==(equality- checks for on value),===(strict equality- checks for value as well as type)
 (unary operators- applies to single variable)
@@ -47,7 +73,7 @@ Comparison- >,<,>=,<=,==(equality- checks for on value),===(strict equality- che
 - not ! - negation
     !a
 */
-var a=10;
+/*var a=10;
 var b=4;
 var c;
 var d="10";// string 10
@@ -76,9 +102,46 @@ console.log(a+Number(d));// typecasting of variables
 // Truthy and falsy
 console.log(Boolean(d));
 //falsy values- 0, false, "", null. undefined and NaN
-console.log(Boolean(0));
-console.log(false);
-console.log(Boolean(""));
-console.log(Boolean(null));
-console.log(Boolean(undefined));
-console.log(Boolean(NaN));
+console.log(Boolean(0));//false
+console.log(false);//false
+console.log(Boolean(""));//false
+console.log(Boolean(''));//false
+console.log(Boolean(null));//false
+console.log(Boolean(undefined));//false
+console.log(Boolean(NaN));//false
+
+let x=5;
+console.log(5%2); // returns 1
+
+*/
+
+// STRINGS
+// NAMING CONVENTION WITH VARIABLES - use camelCase
+//Other Cases involves : ProperCase, lowercase, UPPERCASE
+
+let nameOfEmployee="Pushpinder";
+nameOfEmployee += " Kaur";
+console.log('string '+nameOfEmployee.toUpperCase() + ' has length '+ nameOfEmployee.length);
+console.log(nameOfEmployee.charAt(3));
+
+//CONSTANTS: whose value do not change;
+// naming convention for CONSTANTS is UPPERCASE;
+const PI= 3.14;
+//PI="123";// this will give error as constants can't be re-assigned 
+console.log(PI);
+
+console.error("Error has occured");
+console.warn("This is a warning but no harm ");
+
+// PROGRAMS: in JavaScript
+//1 . add 2 numbers and take input from users
+let a,b;// declare 2 more variables in 1 line
+//a=10; b=20;// Hard coded values
+//instead of hardcoding try to take input from user using prompt dialog box
+a=prompt("Please enter number 1 to be added");// with prompt the input comes in string format
+b=prompt("Please enter number 2 to be added");
+a= Number(a);// typecasting string to number
+b= Number(b);
+console.log(`sum of ${a} and ${b} is ${a+b}`);
+
+

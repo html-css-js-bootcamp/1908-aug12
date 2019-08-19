@@ -67,7 +67,14 @@ Variables: they are used to store a value. They values are stored in memory of a
     toLowerCase() - cunverts string's current case to lowercase.
     charAt() - Returns characters at the specified position.
     some more - splice(), join(), trim() etc.....
+
 ● Conditionals
+- They are used to check Conditions basically used as checkpoints.
+- in JS there are 4 Conditionals:
+    - if
+    - if-else
+    - else-if
+    - switch
 ● Functions and Objects
 ● Debugger Breakpoints in Devtools  
 ● Scopes 

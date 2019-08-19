@@ -135,7 +135,7 @@ console.warn("This is a warning but no harm ");
 
 // PROGRAMS: in JavaScript
 //1 . add 2 numbers and take input from users
-let a,b;// declare 2 more variables in 1 line
+/*let a,b;// declare 2 more variables in 1 line
 //a=10; b=20;// Hard coded values
 //instead of hardcoding try to take input from user using prompt dialog box
 a=prompt("Please enter number 1 to be added");// with prompt the input comes in string format
@@ -143,5 +143,11 @@ b=prompt("Please enter number 2 to be added");
 a= Number(a);// typecasting string to number
 b= Number(b);
 console.log(`sum of ${a} and ${b} is ${a+b}`);
+*/
 
-
+// program to multiply 3 numbers taken from user
+let a,b,c;
+a=Number(prompt('Enter number 1 to multiply with'));
+b=Number(prompt('Enter number 2 to multiply with'));
+c=Number(prompt('Enter number 3 to multiply with'));
+console.log(`Multiplication of ${typeof a} ${a} ${typeof b} ${b} ${typeof c} ${c} is ${a*b*c}`);

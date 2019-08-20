@@ -92,8 +92,10 @@ Variables: they are used to store a value. They values are stored in memory of a
 ● Debugger Breakpoints in Devtools  : Step into (F11), Step Over (F10), Step Out (Shift F11)
 ● Scopes : Global, function, block
 ● Arrays : they are collection of items in list manner which are placed in contigious memory location.
-
-● Objects
+● Objects : Everything in Java is direclty or indirectly Object 
+    objects: collections of related items variable and functions which are known as properties and methods of an objects
+    Eg: global objects : console, window, document.
+    To create custom object first understand the requirement of the object
 ● Introduction to DOM Manipulation
 ● Introduction to Event Handling
 ● Practice JS Flow Control Algorithms

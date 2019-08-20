@@ -344,12 +344,17 @@ function show(callback){
  // ARRAYS : they are derived from object type
  //ar students=[];//empty Array 
  var students=['Chris','Nick','Evie','Omid'];
- console.log(` Type of students ${typeof students}`);
- console.log(`length of students' array ${students.length}`); // returns size of the array
+ //console.log(` Type of students ${typeof students}`);
+ //console.log(`length of students' array ${students.length}`); // returns size of the array
  // return first element
-console.log(students[0]);
-console.log(students[1]);// first element of array
-console.log(students[students.length-1]);// last element of array
+ students[0]='Christopher Hendry';// change the value
+ students.push('Justin');
+ students.push('Min'); // adds a new element from the end
+ students.pop();// remove an element from the last
+ students.unshift('Tim');// inserts element from the start
+//console.log(students[0]);
+//console.log(students[1]);// first element of array
+//console.log(students[students.length-1]);// last element of array
 
 //read all elements of array
 // for(var s=0;s<students.length;s++){
@@ -357,6 +362,80 @@ console.log(students[students.length-1]);// last element of array
 // }
 
 //read elements of arrays in reverse order
-for (let i = students.length-1; i >=0 ; i--) {
-    console.log(students[i]);    
+// for (let i = students.length-1; i >=0 ; i--) {
+//     console.log(students[i]);    
+// }
+
+// find the maximum number/marks from the array
+/*var marks=[56,67,87,89,90,78];
+ function findMax(arr){
+     debugger;
+     var max=0;//temporary variable to hold max value
+     for(let i=0;i<arr.length;i++){
+        if(arr[i]!=undefined && arr[i+1]!=undefined){ 
+        if(arr[i]>arr[i+1]){
+            max=arr[i];
+        }
+        else{
+            max=arr[i+1];
+        }        
+       }
+     }
+     return max;
+ }
+ var maxNumber= findMax(marks);
+ console.log(maxNumber);
+*/
+
+//OBJECTS:
+
+//var car={};// first step to create an object, empty object
+/*var car={
+    //static states
+    make: 'mazda',
+    model:'6',
+    year:'2016',
+    chasisNumber:'1234567',
+    //dynamic states
+    speed: 70,
+    mileage: 15.6,
+    //behaviour -> methods (functions in an object)
+    transport:function(){
+        console.log('it is a 4 seater sedan car which is comfy and economic in usage');
+    },
+    getInfo:function(owner){
+        return `This car ${car.make}-${this.model} belongs to ${owner} has chasis no. ${this.chasisNumber}. It is ${this.year} model has a mileage of ${this.mileage}`;
+    }//this keyword points to current object which is car
 }
+console.log(typeof car);
+console.log(car.make);// dot notation to access the object members
+car.transport();// call method of the object car
+car.chasisNumber='9876543';// change the value
+console.log(car['year']);// bracket notation
+console.log(car.getInfo('Pushpinder Kaur'));
+*/
+
+// create an object for Employee
+
+var employee={
+    id:123,
+    name:{
+        firstName:'Tim',
+        middleName:'H',
+        lastName:'ortons'
+    },
+    role: 'Manager',
+    basicSalary:9000.00,
+    hra:2000.00,
+    medical: 200,
+    ta:500,
+    getSalary:function(){
+        return this.basicSalary+this.hra+this.ta-this.medical-.3*this.basicSalary
+    },
+    bio:function(){
+        return `Emp Id - ${this.id}, Name - ${this.name.firstName} ${this.name.middleName} ${this.name.lastName}, role - ${this.role}, salary - ${this.getSalary()}`;
+    }
+}
+
+console.log(employee.name.firstName);
+console.log(employee.bio());

@@ -279,19 +279,84 @@ add(a,b);*/
     // console.log(checkEven);
 
 //CALLBACK FUNCTIONS:
+var testScope='global';
+//console.log(testScope);
 function showFullName(firstName,middleName,lastName){
-    if(middleName!="" || middleName!=null || middleName!==undefined)
-        return `${firstName} ${middleName} ${lastName}`;
-    else
+   // console.log(testScope);
+   funcScope='function scope';// not accessible outside function
+   {
+       //another block in function
+       let blockScope="block scope";// var has a function scope and let has block scope
+   }
+   console.log("inside function -> outside block "+blockScope);
+    if(middleName!="" || middleName!=null || middleName!==undefined){
+       // console.log("inside function -> if block "+funcScope);
+        return `${firstName} ${middleName} ${lastName}`;        
+    }
+    else{
+        console.log("inside function -> else block "+funcScope);
         return `${firstName} ${lastName}`;
+    }    
 }
 
+// {    //block scope
+//     let blockScope2='another block scope';
+// }
+//console.log("outside block "+blockScope2);// with var it is accessible but not with let
+//console.log("outside function "+funcScope);// this is not accessible because of function scope
+
+function show(callback){
+    //console.log(testScope);
+    let fName=prompt('Enter your first name');
+    let mName=prompt('Enter your middle name');
+    let lName=prompt('Enter your last name');
+   console.log(callback(fName,mName,lName));
+}
+//debugger;
+//show(showFullName);
+//console.log(testScope);
 //IIFE functions - declared and called immediately
             // Callback function
-               //vvv
-(function show(callback){
+     
+            //vvv
+/*(function show(callback){
     let fName=prompt('Enter your first name');
     let mName=prompt('Enter your middle name');
     let lName=prompt('Enter your last name');
    console.log(callback(fName,mName,lName));
 })(showFullName);
+*/
+
+//SCOPES: life-time of JavaScript object (Every datatype in JS is directly or indirectly inherited from Object)
+/**
+ * Global Scope -> this mean it can be accessed anywhere outside program as well. They are not secure as they
+ *                  are accessible any where
+ * Local Scope -> they more restricted than function scope
+ *  - Block Scope -> accessible only with in the block {} , but outside {} they are not accessible.
+ *              Typically let keyword (ES6) restricts a variable to block scope.
+ *  - Function Scope -> they are accessible anywhere with in the function (parameters etc...) but outside function
+ *                  they are not accessible
+ */
+
+ //most restrictive to least restrictive => block scope=>function scope=>global scope
+
+
+ // ARRAYS : they are derived from object type
+ //ar students=[];//empty Array 
+ var students=['Chris','Nick','Evie','Omid'];
+ console.log(` Type of students ${typeof students}`);
+ console.log(`length of students' array ${students.length}`); // returns size of the array
+ // return first element
+console.log(students[0]);
+console.log(students[1]);// first element of array
+console.log(students[students.length-1]);// last element of array
+
+//read all elements of array
+// for(var s=0;s<students.length;s++){
+//     console.log(students[s])
+// }
+
+//read elements of arrays in reverse order
+for (let i = students.length-1; i >=0 ; i--) {
+    console.log(students[i]);    
+}

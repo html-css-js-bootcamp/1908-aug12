@@ -89,9 +89,10 @@ Variables: they are used to store a value. They values are stored in memory of a
         - callback functions
         - IIFE(Immediate Invoked Function Expressions) functions
 
-● Debugger Breakpoints in Devtools  
-● Scopes 
-● Arrays
+● Debugger Breakpoints in Devtools  : Step into (F11), Step Over (F10), Step Out (Shift F11)
+● Scopes : Global, function, block
+● Arrays : they are collection of items in list manner which are placed in contigious memory location.
+
 ● Objects
 ● Introduction to DOM Manipulation
 ● Introduction to Event Handling

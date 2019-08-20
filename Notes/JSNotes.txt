@@ -93,3 +93,7 @@ Variables: they are used to store a value. They values are stored in memory of a
 ● Scopes 
 ● Arrays
 ● Objects
+● Introduction to DOM Manipulation
+● Introduction to Event Handling
+● Practice JS Flow Control Algorithms
+● Implement Bubblesort

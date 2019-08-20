@@ -269,11 +269,29 @@ add(a,b);*/
     // var result=add(10,40);
     // console.log(result);
 
-    var isEven=(num)=>{
-        if(num%2==0)
-            return true;
-        else 
-            return false;
-    }
-    var checkEven=isEven(65);
-    console.log(checkEven);
+    // var isEven=(num)=>{
+    //     if(num%2==0)
+    //         return true;
+    //     else 
+    //         return false;
+    // }
+    // var checkEven=isEven(65);
+    // console.log(checkEven);
+
+//CALLBACK FUNCTIONS:
+function showFullName(firstName,middleName,lastName){
+    if(middleName!="" || middleName!=null || middleName!==undefined)
+        return `${firstName} ${middleName} ${lastName}`;
+    else
+        return `${firstName} ${lastName}`;
+}
+
+//IIFE functions - declared and called immediately
+            // Callback function
+               //vvv
+(function show(callback){
+    let fName=prompt('Enter your first name');
+    let mName=prompt('Enter your middle name');
+    let lName=prompt('Enter your last name');
+   console.log(callback(fName,mName,lName));
+})(showFullName);

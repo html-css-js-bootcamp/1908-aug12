@@ -388,7 +388,6 @@ function show(callback){
 */
 
 //OBJECTS:
-
 //var car={};// first step to create an object, empty object
 /*var car={
     //static states
@@ -417,7 +416,7 @@ console.log(car.getInfo('Pushpinder Kaur'));
 
 // create an object for Employee
 
-var employee={
+/*var employee={
     id:123,
     name:{
         firstName:'Tim',
@@ -438,4 +437,24 @@ var employee={
 }
 
 console.log(employee.name.firstName);
-console.log(employee.bio());
+console.log(employee.bio());*/
+
+// EVENTS : User action Eg: click, hover, change, blur, keypress, keyup, keydown etc....
+
+// DOM Manipulation
+function addToList(){
+    var list=document.getElementById('list');
+    var li=document.createElement('li');
+    li.textContent='DOM Manipulation';
+    list.appendChild(li);
+}
+//addToList();// direct function call
+
+var btnAdd=document.getElementById('btnAdd');
+
+// Binding event to event listener
+//event         event listner/ even handler
+//vvv            vvvv
+//btnAdd.onclick=addToList;
+
+btnAdd.addEventListener('click',addToList);

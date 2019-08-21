@@ -87,10 +87,10 @@ Variables: they are used to store a value. They values are stored in memory of a
         - functions with parameters
         - function which returns values
         - callback functions
-        - IIFE(Immediate Invoked Function Expressions) functions
+        - IIFE(Immediate Invoked Function Expressions) functions : a function is called with declaration
 
 ● Debugger Breakpoints in Devtools  : Step into (F11), Step Over (F10), Step Out (Shift F11)
-● Scopes : Global, function, block
+● Scopes : Global, function, block -> var is function scoped and let is block scope.
 ● Arrays : they are collection of items in list manner which are placed in contigious memory location.
 ● Objects : Everything in Java is direclty or indirectly Object 
     objects: collections of related items variable and functions which are known as properties and methods of an objects

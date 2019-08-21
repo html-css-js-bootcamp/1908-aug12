@@ -341,8 +341,8 @@ function show(callback){
  //most restrictive to least restrictive => block scope=>function scope=>global scope
 
 
- // ARRAYS : they are derived from object type
- //ar students=[];//empty Array 
+// ARRAYS : they are derived from object type
+ //var students=[];//empty Array 
  var students=['Chris','Nick','Evie','Omid'];
  //console.log(` Type of students ${typeof students}`);
  //console.log(`length of students' array ${students.length}`); // returns size of the array
@@ -356,7 +356,7 @@ function show(callback){
 //console.log(students[1]);// first element of array
 //console.log(students[students.length-1]);// last element of array
 
-//read all elements of array
+//read all elements of array- in forward direction
 // for(var s=0;s<students.length;s++){
 //     console.log(students[s])
 // }
@@ -387,8 +387,9 @@ function show(callback){
  console.log(maxNumber);
 */
 
-//OBJECTS:
+//OBJECTS: complex types
 //var car={};// first step to create an object, empty object
+// THIS IS KNOWN AS JAVASCRIPT OBJECT LITERAL NOTATION
 /*var car={
     //static states
     make: 'mazda',
@@ -435,7 +436,6 @@ console.log(car.getInfo('Pushpinder Kaur'));
         return `Emp Id - ${this.id}, Name - ${this.name.firstName} ${this.name.middleName} ${this.name.lastName}, role - ${this.role}, salary - ${this.getSalary()}`;
     }
 }
-
 console.log(employee.name.firstName);
 console.log(employee.bio());*/
 
